@@ -2,6 +2,7 @@
 ## Public, review-facing documentation
 
 **Release anchor:** v0.1.1-review-ready  
+**Canonical documentation release:** [v0.1.1-review-ready (GitHub Release)](https://github.com/damasconsultingservices-lang/pdsl-docs/releases/tag/v0.1.1-review-ready)  
 **Author / Owner:** Frantz Damas  
 
 Public diplomacy now operates inside **algorithmically governed environments**—systems that curate visibility, prioritize affect, and shape attention at scale. PDSL is a **deterministic, theory-constrained simulation framework** built to support **controlled scenario reasoning** and **regime-based interpretation** in these environments.
