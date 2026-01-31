@@ -14,7 +14,8 @@ Please cite this repository using the machine-readable `CITATION.cff` file at th
 
 Add your public link here:
 
-- Related scholarly work (ResearchGate): https://www.researchgate.net/publication/396528215_Tiktok's_Algorithmic_Influence_and_American_Youth_Support_for_US_Public_Diplomacy
+- **Related scholarly work (ResearchGate):**  
+  [TikTok’s Algorithmic Influence and American Youth Support for U.S. Public Diplomacy](https://www.researchgate.net/publication/396528215_Tiktok's_Algorithmic_Influence_and_American_Youth_Support_for_US_Public_Diplomacy)
 
 ---
 
