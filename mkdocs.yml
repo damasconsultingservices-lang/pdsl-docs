@@ -32,6 +32,13 @@ theme:
 
 plugins:
   - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        fr: Français
+        es: Español
+        ht: Kreyòl Ayisyen
 
 markdown_extensions:
   - admonition
