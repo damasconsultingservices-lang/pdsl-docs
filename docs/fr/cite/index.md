@@ -1,24 +1,25 @@
-# Comment citer
+# Comment citer PDSL
 
-## Citation du dépôt (repository)
+## Citation du dépôt
 
-Veuillez citer ce dépôt en utilisant le fichier lisible par machine `CITATION.cff` situé à la racine du dépôt.
+Veuillez citer ce dépôt en utilisant le fichier `CITATION.cff` lisible par machine, situé à la racine du dépôt.
 
-**Recommandé**
-- Citer la version taguée : **v0.1.1-review-ready**
-- Éviter de citer des commits non tagués pour les artefacts destinés à l’évaluation
-
----
-
-## Lien public de publication (DOI / ResearchGate)
-
-Ajoutez votre lien public ici :
-
-- **Travaux académiques associés (ResearchGate) :**  
-  [TikTok’s Algorithmic Influence and American Youth Support for U.S. Public Diplomacy](https://www.researchgate.net/publication/396528215_Tiktok's_Algorithmic_Influence_and_American_Youth_Support_for_US_Public_Diplomacy)
+**Recommandation**
+- Citer la version balisée : **v0.1.1-review-ready**
+- Éviter de citer des commits non balisés pour les artefacts soumis à évaluation
 
 ---
 
-## Garde-fou de citation
+## Lien de publication publique (DOI / ResearchGate)
 
-Les sorties de PDSL sont des constructions interprétatives destinées à un raisonnement contrôlé par scénarios. Cette version de documentation ne soutient ni des affirmations de prévision, ni des claims d’inférence causale.
+Travaux universitaires associés :
+
+- **Influence algorithmique de TikTok et soutien des jeunes Américains à la diplomatie publique des États-Unis**  
+  https://www.researchgate.net/publication/396528215_Tiktok's_Algorithmic_Influence_and_American_Youth_Support_for_US_Public_Diplomacy
+
+---
+
+## Clause de prudence en matière de citation
+
+Les résultats produits par PDSL sont des constructions interprétatives destinées à l’exploration de scénarios contrôlés.  
+Cette version de la documentation ne permet ni prévisions, ni inférences causales, ni extrapolations empiriques.
