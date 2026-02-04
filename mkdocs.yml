@@ -39,6 +39,49 @@ plugins:
         fr: Français
         es: Español
         ht: Kreyòl Ayisyen
+      nav_translations:
+        fr:
+          Home: Accueil
+          Methods: Méthodes
+          Overview: Vue d’ensemble
+          Model Card: Fiche modèle
+          Methods Note: Note de méthode
+          Review Protocol: Protocole de revue
+          Governance: Gouvernance
+          Limitations: Limites
+          Policy: Politique
+          Policy Proposal: Proposition de politique
+          Policy Method Memo: Note méthodologique
+          Cite: Citer
+          How to Cite: Comment citer
+        es:
+          Home: Inicio
+          Methods: Métodos
+          Overview: Resumen
+          Model Card: Ficha del modelo
+          Methods Note: Nota metodológica
+          Review Protocol: Protocolo de revisión
+          Governance: Gobernanza
+          Limitations: Limitaciones
+          Policy: Política
+          Policy Proposal: Propuesta de política
+          Policy Method Memo: Nota metodológica
+          Cite: Citar
+          How to Cite: Cómo citar
+        ht:
+          Home: Akèy
+          Methods: Metòd
+          Overview: Rezime
+          Model Card: Fich Modèl
+          Methods Note: Nòt Metòd
+          Review Protocol: Pwotokòl Revizyon
+          Governance: Gouvènans
+          Limitations: Limitasyon
+          Policy: Politik
+          Policy Proposal: Pwopozisyon Politik
+          Policy Method Memo: Nòt Metòd Politik
+          Cite: Site
+          How to Cite: Kijan pou site
 
 markdown_extensions:
   - admonition
