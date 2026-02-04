@@ -1,28 +1,27 @@
-# Kijan pou site
+# Kijan pou site PDSL
 
-## Site depo a (repository)
+## Sitasyon depo a
 
-Tanpri site depo sa a lè w sèvi ak fichye `CITATION.cff` ki fasil pou machin li, ki nan rasinn (root) depo a.
+Tanpri site depo sa a lè w ap itilize fichye `CITATION.cff`, ki se yon fichye òdinatè ka li, epi ki chita nan rasin depo a.
 
-**Rekòmande**
-- Site vèsyon ki gen tag la: **v0.1.1-review-ready**
-- Evite site commits ki pa gen tag, espesyalman pou dokiman ak artefak ki fèt pou revizyon
+**Rekòmandasyon**
+- Site vèsyon ki make a: **v0.1.1-review-ready**
+- Evite site chanjman (commits) ki pa make lè w ap itilize dokiman yo pou revizyon akademik
 
 ---
 
 ## Lyen piblik pou piblikasyon (DOI / ResearchGate)
 
-Mete lyen piblik ou a isit la:
+Travay akademik ki gen rapò:
 
-- **Travay akademik ki gen rapò (ResearchGate):**  
-  [TikTok’s Algorithmic Influence and American Youth Support for U.S. Public Diplomacy](https://www.researchgate.net/publication/396528215_Tiktok's_Algorithmic_Influence_and_American_Youth_Support_for_US_Public_Diplomacy)
+- **Enpak algoritm TikTok sou sipò jèn Ameriken yo pou diplomasi piblik Etazini**  
+  https://www.researchgate.net/publication/396528215_Tiktok's_Algorithmic_Influence_and_American_Youth_Support_for_US_Public_Diplomacy
 
 ---
 
-## Gadyen pou fason yo site (guardrail)
+## Règ pwoteksyon pou sitasyon
 
-Rezilta PDSL yo se konstriksyon entèpretatif ki fèt pou rezonman kontwole ak senaryo. Vèsyon dokimantasyon sa a pa sipòte deklarasyon “previzyon” (forecast), “prediksyon” (prediction), ni okenn reklamasyon ki ta fè kwè se enfèrans kozatif (causal inference).
+Rezilta PDSL pwodui yo se modèl entèpretatif ki fèt pou ede reflechi sou senaryo kontwole.  
+Vèsyon dokimantasyon sa a **pa** fèt pou fè prediksyon, ni pou tire konklizyon koz-efè, ni pou jeneralize rezilta yo sou popilasyon an antye.
 
-Sa vle di:
-- Ou ka sèvi ak PDSL pou eksplike lojik, limit, ak konsekans diferan chwa politik oswa estrateji kominikasyon.
-- Men ou pa dwe prezante rezilta yo tankou yo ta yon prediksyon sou lavni, oswa tankou yo pwouve yon relasyon koz-efè.
+Nenpòt itilizasyon nan rechèch, politik piblik, oswa analiz estratejik dwe rekonèt limit metodolojik sa yo klèman.
