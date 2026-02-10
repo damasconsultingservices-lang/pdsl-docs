@@ -1,12 +1,14 @@
 site_name: Public Diplomacy Simulation Lab (PDSL)
 site_description: Public, review-facing documentation for the Public Diplomacy Simulation Lab (PDSL).
 site_author: Frantz Damas
+site_url: https://damasconsultingservices-lang.github.io/pdsl-docs/
 
 repo_name: PDSL Public Docs
 repo_url: https://github.com/damasconsultingservices-lang/pdsl-docs
 edit_uri: edit/main/docs/
 
 docs_dir: docs
+use_directory_urls: true
 
 theme:
   name: material
@@ -97,3 +99,26 @@ plugins:
           Policy Method Memo: Nòt Metòd Politik
           Cite: Site
           How to Cite: Kijan pou site
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Methods:
+      - Overview: methods/index.md
+      - Model Card: methods/model-card.md
+      - Methods Note: methods/methods-note.md
+      - Review Protocol: methods/review-protocol.md
+      - Governance: methods/governance.md
+      - Limitations: methods/limitations.md
+  - Policy:
+      - Overview: policy/index.md
+      - Policy Proposal: policy/policy-proposal.md
+      - Policy Method Memo: policy/policy-method-memo.md
+  - Cite:
+      - How to Cite: cite/index.md
