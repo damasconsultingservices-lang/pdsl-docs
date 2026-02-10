@@ -42,19 +42,20 @@ plugins:
       default_language_only: false
       docs_structure: folder
 
-      languages:
-        - locale: en
-          name: English
-          build: true
-        - locale: fr
-          name: Français
-          build: true
-        - locale: es
-          name: Español
-          build: true
-        - locale: ht
-          name: Kreyòl Ayisyen
-          build: true
+     languages:
+  - locale: en
+    name: English
+    default: true
+    build: true
+  - locale: fr
+    name: Français
+    build: true
+  - locale: es
+    name: Español
+    build: true
+  - locale: ht
+    name: Kreyòl Ayisyen
+    build: true
 
       nav_translations:
         fr:
