@@ -97,26 +97,3 @@ plugins:
           Policy Method Memo: Nòt Metòd Politik
           Cite: Site
           How to Cite: Kijan pou site
-
-markdown_extensions:
-  - admonition
-  - attr_list
-  - md_in_html
-  - toc:
-      permalink: true
-
-nav:
-  - Home: index.md
-  - Methods:
-      - Overview: methods/index.md
-      - Model Card: methods/model-card.md
-      - Methods Note: methods/methods-note.md
-      - Review Protocol: methods/review-protocol.md
-      - Governance: methods/governance.md
-      - Limitations: methods/limitations.md
-  - Policy:
-      - Overview: policy/index.md
-      - Policy Proposal: policy/policy-proposal.md
-      - Policy Method Memo: policy/policy-method-memo.md
-  - Cite:
-      - How to Cite: cite/index.md
