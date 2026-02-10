@@ -1,6 +1,13 @@
 # How to Cite
 
 ## Repository citation
+<div class="pill">
+<strong>Language:</strong>
+<a href="../cite/">EN</a> ·
+<a href="../fr/cite/">FR</a> ·
+<a href="../es/cite/">ES</a> ·
+<a href="../ht/cite/">HT</a>
+</div>
 
 Please cite this repository using the machine-readable `CITATION.cff` file at the repository root.
 
