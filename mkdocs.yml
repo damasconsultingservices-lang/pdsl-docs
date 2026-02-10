@@ -1,16 +1,59 @@
+site_name: Public Diplomacy Simulation Lab (PDSL)
+site_description: Public, review-facing documentation for the Public Diplomacy Simulation Lab (PDSL).
+site_author: Frantz Damas
+
+repo_name: PDSL Public Docs
+repo_url: https://github.com/damasconsultingservices-lang/pdsl-docs
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.action.edit
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: navy
+      accent: amber
+    - scheme: slate
+      primary: navy
+      accent: amber
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
 plugins:
   - search
   - i18n:
       default_language: en
+      default_language_only: false
+      docs_structure: folder
+
       languages:
         - locale: en
           name: English
+          build: true
         - locale: fr
           name: Français
+          build: true
         - locale: es
           name: Español
+          build: true
         - locale: ht
           name: Kreyòl Ayisyen
+          build: true
+
       nav_translations:
         fr:
           Home: Accueil
@@ -54,3 +97,26 @@ plugins:
           Policy Method Memo: Nòt Metòd Politik
           Cite: Site
           How to Cite: Kijan pou site
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Methods:
+      - Overview: methods/index.md
+      - Model Card: methods/model-card.md
+      - Methods Note: methods/methods-note.md
+      - Review Protocol: methods/review-protocol.md
+      - Governance: methods/governance.md
+      - Limitations: methods/limitations.md
+  - Policy:
+      - Overview: policy/index.md
+      - Policy Proposal: policy/policy-proposal.md
+      - Policy Method Memo: policy/policy-method-memo.md
+  - Cite:
+      - How to Cite: cite/index.md
