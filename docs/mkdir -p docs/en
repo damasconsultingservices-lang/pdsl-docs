@@ -1,4 +1,0 @@
-git mv docs/index.md docs/en/index.md
-git mv docs/methods docs/en/methods
-git mv docs/policy docs/en/policy
-git mv docs/cite docs/en/cite
