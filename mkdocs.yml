@@ -36,7 +36,6 @@ theme:
     repo: fontawesome/brands/github
 
 plugins:
-  - search
   - i18n:
       docs_structure: suffix
       default_language: en
@@ -50,6 +49,7 @@ plugins:
           name: Español
         ht:
           name: Kreyòl Ayisyen
+  - search
 
 markdown_extensions:
   - admonition
