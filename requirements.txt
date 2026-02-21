@@ -1,3 +1,3 @@
 mkdocs==1.6.1
-mkdocs-material>=9.5.0
-mkdocs-static-i18n==1.3.1
+mkdocs-material==9.5.48   # known stable pre-2.0-warning heavy version
+mkdocs-static-i18n==1.3.1  # latest as of Feb 2026 — definitely supports nav_translations + default_language
