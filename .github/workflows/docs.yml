@@ -26,14 +26,57 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install dependencies + hard version gate
         run: |
           python -m pip install --upgrade pip
           pip install --no-cache-dir --force-reinstall -r requirements.txt
+
           echo "----- VERSIONS (PROOF) -----"
           mkdocs --version
-          python -m pip show mkdocs-static-i18n
-          python -m pip freeze | grep -E "^(mkdocs|mkdocs-material|mkdocs-static-i18n)=="
+          python -m pip show mkdocs || true
+          python -m pip show mkdocs-material || true
+          python -m pip show mkdocs-static-i18n || true
+          python -m pip show mkdocs-i18n || true
+          python -m pip freeze | grep -E "^(mkdocs|mkdocs-material|mkdocs-static-i18n|mkdocs-i18n)=="
+
+          echo "----- HARD GATE (must match pins) -----"
+          python - << 'PY'
+          import sys
+          try:
+              import importlib.metadata as m
+          except Exception:
+              import importlib_metadata as m  # type: ignore
+
+          def ver(pkg: str):
+              try:
+                  return m.version(pkg)
+              except Exception:
+                  return None
+
+          WANT = {
+              "mkdocs": "1.6.1",
+              "mkdocs-material": "9.5.48",
+              "mkdocs-static-i18n": "0.48",
+          }
+
+          bad = []
+          for k, v in WANT.items():
+              got = ver(k)
+              if got != v:
+                  bad.append((k, v, got))
+
+          if bad:
+              print("VERSION MISMATCH DETECTED:")
+              for k, v, got in bad:
+                  print(f" - {k}: wanted {v}, got {got}")
+              sys.exit(2)
+
+          other = ver("mkdocs-i18n")
+          if other is not None:
+              print(f"WARNING: mkdocs-i18n is installed (version {other}). This can conflict with mkdocs-static-i18n.")
+
+          print("Versions match pins exactly.")
+          PY
 
       - name: Clean previous build directory
         run: rm -rf site
