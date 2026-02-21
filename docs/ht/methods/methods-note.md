@@ -1,1 +1,0 @@
-#methods-note.md
