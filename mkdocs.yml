@@ -37,24 +37,6 @@ theme:
 
 plugins:
   - search
-  - i18n:
-      docs_structure: folder
-      fallback_to_default: true
-      default_language: en
-      languages:
-        - locale: en
-          name: English
-          default: true
-          build: true
-        - locale: fr
-          name: Français
-          build: true
-        - locale: es
-          name: Español
-          build: true
-        - locale: ht
-          name: Kreyòl Ayisyen
-          build: true
 
 markdown_extensions:
   - admonition
@@ -64,17 +46,17 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
+  - Home: en/index.md
   - Methods:
-      - Overview: methods/index.md
-      - Model Card: methods/model-card.md
-      - Methods Note: methods/methods-note.md
-      - Review Protocol: methods/review-protocol.md
-      - Governance: methods/governance.md
-      - Limitations: methods/limitations.md
+      - Overview: en/methods/index.md
+      - Model Card: en/methods/model-card.md
+      - Methods Note: en/methods/methods-note.md
+      - Review Protocol: en/methods/review-protocol.md
+      - Governance: en/methods/governance.md
+      - Limitations: en/methods/limitations.md
   - Policy:
-      - Overview: policy/index.md
-      - Policy Proposal: policy/policy-proposal.md
-      - Policy Method Memo: policy/policy-method-memo.md
+      - Overview: en/policy/index.md
+      - Policy Proposal: en/policy/policy-proposal.md
+      - Policy Method Memo: en/policy/policy-method-memo.md
   - Cite:
-      - How to Cite: cite/index.md
+      - How to Cite: en/cite/index.md
