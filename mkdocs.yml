@@ -7,6 +7,7 @@ repo_url: https://github.com/damasconsultingservices-lang/pdsl-docs
 edit_uri: edit/main/docs/
 docs_dir: docs
 use_directory_urls: true
+
 theme:
   name: material
   language: en
@@ -31,6 +32,7 @@ theme:
     code: JetBrains Mono
   icon:
     repo: fontawesome/brands/github
+
 plugins:
   - search
   - i18n:
@@ -92,12 +94,14 @@ plugins:
           Policy Method Memo: Nòt Metòd Politik
           Cite: Site
           How to Cite: Kijan pou site
+
 markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
   - toc:
       permalink: true
+
 nav:
   - Home: index.md
   - Methods:
