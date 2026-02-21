@@ -2,11 +2,15 @@ name: Deploy docs
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: mkdocs-deploy
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -24,11 +28,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          python -m pip freeze
 
-      - name: Build (strict)
-        run: |
-          mkdocs --version
-          mkdocs build --clean --strict
+      - name: Build
+        run: mkdocs build --clean --strict --verbose
 
       - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: mkdocs gh-deploy --force --clean
