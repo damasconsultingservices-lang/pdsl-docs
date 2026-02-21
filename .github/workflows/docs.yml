@@ -30,12 +30,19 @@ jobs:
           pip install --no-cache-dir --force-reinstall -r requirements.txt
           mkdocs --version
           python -m pip show mkdocs-static-i18n
-          python -m pip freeze
 
-      - name: Build
-        run: mkdocs build --clean --strict --verbose
+      - name: Clean previous build directory
+        run: |
+          rm -rf site
 
-      - name: Deploy
+      - name: Build site
+        run: |
+          mkdocs build --clean --strict --verbose
+          echo "----- SITE CONTENTS -----"
+          ls -R site | head -200
+
+      - name: Deploy to gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mkdocs gh-deploy --force --clean
+        run: |
+          mkdocs gh-deploy --clean --force
