@@ -1,12 +1,14 @@
 site_name: Public Diplomacy Simulation Lab (PDSL)
 site_description: Public, review-facing documentation for the Public Diplomacy Simulation Lab (PDSL).
 site_author: Frantz Damas
+site_url: https://damasconsultingservices-lang.github.io/pdsl-docs/
 
 repo_name: PDSL Public Docs
 repo_url: https://github.com/damasconsultingservices-lang/pdsl-docs
 edit_uri: edit/main/docs/
 
 docs_dir: docs
+use_directory_urls: true
 
 theme:
   name: material
@@ -37,68 +39,21 @@ plugins:
   - search
   - i18n:
       docs_structure: folder
-      default_language: en
-      default_language_only: false
-
-      # Build languages into /fr /es /ht (English stays canonical at /)
+      fallback_to_default: true
       languages:
-        en:
+        - locale: en
           name: English
           default: true
           build: true
-        fr:
+        - locale: fr
           name: Français
           build: true
-        es:
+        - locale: es
           name: Español
           build: true
-        ht:
+        - locale: ht
           name: Kreyòl Ayisyen
           build: true
-
-      nav_translations:
-        fr:
-          Home: Accueil
-          Methods: Méthodes
-          Overview: Vue d’ensemble
-          Model Card: Fiche modèle
-          Methods Note: Note de méthode
-          Review Protocol: Protocole de revue
-          Governance: Gouvernance
-          Limitations: Limites
-          Policy: Politique
-          Policy Proposal: Proposition de politique
-          Policy Method Memo: Note méthodologique
-          Cite: Citer
-          How to Cite: Comment citer
-        es:
-          Home: Inicio
-          Methods: Métodos
-          Overview: Resumen
-          Model Card: Ficha del modelo
-          Methods Note: Nota metodológica
-          Review Protocol: Protocolo de revisión
-          Governance: Gobernanza
-          Limitations: Limitaciones
-          Policy: Política
-          Policy Proposal: Propuesta de política
-          Policy Method Memo: Nota metodológica
-          Cite: Citar
-          How to Cite: Cómo citar
-        ht:
-          Home: Akèy
-          Methods: Metòd
-          Overview: Rezime
-          Model Card: Fich Modèl
-          Methods Note: Nòt Metòd
-          Review Protocol: Pwotokòl Revizyon
-          Governance: Gouvènans
-          Limitations: Limitasyon
-          Policy: Politik
-          Policy Proposal: Pwopozisyon Politik
-          Policy Method Memo: Nòt Metòd Politik
-          Cite: Site
-          How to Cite: Kijan pou site
 
 markdown_extensions:
   - admonition
@@ -106,8 +61,6 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-  - pymdownx.superfences
-  - pymdownx.highlight
 
 nav:
   - Home: index.md
