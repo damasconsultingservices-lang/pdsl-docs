@@ -25,11 +25,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Show installed package versions
+      - name: Debug: Show exact installed versions
         run: |
-          pip list | grep -i -E 'mkdocs|material|i18n|static'
-          echo "Full pip freeze for i18n:"
-          pip freeze | grep -i i18n
+          echo "Installed packages matching mkdocs / i18n:"
+          pip list | grep -i -E 'mkdocs|material|i18n|static' || echo "No matches found"
+          echo ""
+          echo "Full freeze for i18n plugin:"
+          pip freeze | grep -i static-i18n || echo "mkdocs-static-i18n not installed!"
       - name: Build (verbose)
         run: |
           mkdocs --version
