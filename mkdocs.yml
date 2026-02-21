@@ -17,19 +17,23 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: en
       docs_structure: folder
       fallback_to_default: true
+      default_language: en
       languages:
         - locale: en
           name: English
           default: true
+          build: true
         - locale: fr
           name: Français
+          build: true
         - locale: es
           name: Español
+          build: true
         - locale: ht
           name: Kreyòl Ayisyen
+          build: true
 
 markdown_extensions:
   - admonition
