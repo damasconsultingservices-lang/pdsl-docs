@@ -8,6 +8,7 @@ repo_url: https://github.com/damasconsultingservices-lang/pdsl-docs
 edit_uri: edit/main/docs/
 
 docs_dir: docs
+site_dir: site
 use_directory_urls: true
 
 theme:
@@ -62,6 +63,21 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+
+extra:
+  alternate:
+    - name: English
+      link: /pdsl-docs/
+      lang: en
+    - name: Français
+      link: /pdsl-docs/fr/
+      lang: fr
+    - name: Español
+      link: /pdsl-docs/es/
+      lang: es
+    - name: Kreyòl Ayisyen
+      link: /pdsl-docs/ht/
+      lang: ht
 
 nav:
   - Home: index.md
