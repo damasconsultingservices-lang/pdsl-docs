@@ -2,8 +2,7 @@ name: Deploy docs
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -16,6 +15,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,17 +27,33 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install dependencies (clean + pinned)
         run: |
+          set -euxo pipefail
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+
+          # Clean install from pins (avoid cache surprises)
+          pip install --no-cache-dir --force-reinstall -r requirements.txt
+
+          # Remove the common conflicting plugin if it shows up (it can hijack "i18n")
+          pip uninstall -y mkdocs-i18n || true
+
+          echo "----- VERSIONS (PROOF) -----"
           mkdocs --version
+          python -m pip show mkdocs || true
+          python -m pip show mkdocs-material || true
           python -m pip show mkdocs-static-i18n || true
+          python -m pip show mkdocs-i18n || true
+          python -m pip freeze | grep -E "^(mkdocs|mkdocs-material|mkdocs-static-i18n|mkdocs-i18n)==|^ghp-import==" || true
 
-      - name: Build
-        run: mkdocs build --clean --strict --verbose
+      - name: Build (strict)
+        run: |
+          set -euxo pipefail
+          mkdocs build --clean --strict --verbose
 
-      - name: Deploy
+      - name: Deploy to gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mkdocs gh-deploy --force --clean --message "Deploy ${GITHUB_SHA}"
+        run: |
+          set -euxo pipefail
+          mkdocs gh-deploy --force --clean --message "Deploy ${GITHUB_SHA}"
