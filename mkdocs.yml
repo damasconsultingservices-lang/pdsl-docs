@@ -5,7 +5,7 @@ site_url: https://damasconsultingservices-lang.github.io/pdsl-docs/
 
 repo_name: PDSL Public Docs
 repo_url: https://github.com/damasconsultingservices-lang/pdsl-docs
-edit_uri: edit/main/docs/
+edit_uri: edit/main/docs/en/
 
 docs_dir: docs/en
 use_directory_urls: true
@@ -14,7 +14,8 @@ theme:
   name: material
   language: en
   features:
-    - navigation.instant
+    # Temporarily comment out navigation.instant if you keep seeing stale pages.
+    # - navigation.instant
     - navigation.tabs
     - navigation.sections
     - navigation.top
