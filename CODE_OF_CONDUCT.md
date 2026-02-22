@@ -1,5 +1,5 @@
 # Code of Conduct
-
+Version: v0.1.x documentation governance alignment
 ## Purpose
 
 The Public Diplomacy Simulation Lab (PDSL) documentation repository exists to support disciplined, governance-oriented, theory-constrained research.
@@ -16,7 +16,7 @@ Participants are expected to:
 - Focus on substantive improvements to clarity and governance
 - Critique ideas without attacking individuals
 - Maintain academic and analytical integrity
-- Avoid exaggeration, overclaiming, or hype language
+- Ensure all contributions maintain evidentiary discipline and accurately represent the scope and limitations of the framework.
 
 ---
 
