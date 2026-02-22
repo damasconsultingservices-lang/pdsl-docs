@@ -2,11 +2,9 @@ site_name: Public Diplomacy Simulation Lab (PDSL)
 site_description: Public, review-facing documentation for the Public Diplomacy Simulation Lab (PDSL).
 site_author: Frantz Damas
 site_url: https://damasconsultingservices-lang.github.io/pdsl-docs/
-
 repo_name: PDSL Public Docs
 repo_url: https://github.com/damasconsultingservices-lang/pdsl-docs
 edit_uri: edit/main/docs/
-
 docs_dir: docs
 use_directory_urls: true
 
@@ -38,14 +36,13 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: en
-      docs_structure: folder
-      fallback_to_default: true
-      reconfigure_material: true
+      default_language: en                 # Required for default/fallback in 1.x
+      docs_structure: folder               # Subfolders: /en/, /fr/, /es/, /ht/
+      fallback_to_default: true            # Show English if translation missing
+      reconfigure_material: true           # Auto-adds language switcher in Material theme
       languages:
         en:
           name: English
-          default: true
           build: true
         fr:
           name: Français
