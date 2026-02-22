@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a documentation bug, broken link, or build issue
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the problem and where you saw it.
+      placeholder: "Page: /methods/... Link broken, or build fails with ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: "Expected the page to load with styling / link to work ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce (optional)
+      placeholder: "1) Go to ... 2) Click ... 3) Observe ..."
+    validations:
+      required: false
