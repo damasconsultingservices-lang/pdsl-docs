@@ -764,6 +764,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#example-citation-documentation-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example citation (documentation release)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-not-to-cite-pdsl-as" class="md-nav__link">
     <span class="md-ellipsis">
       What not to cite PDSL as
@@ -773,9 +782,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#repository-citation-file" class="md-nav__link">
+  <a href="#repository-citation-metadata" class="md-nav__link">
     <span class="md-ellipsis">
-      Repository citation file
+      Repository citation metadata
     </span>
   </a>
   
@@ -807,19 +816,36 @@
 <h1 id="how-to-cite">How to Cite<a class="headerlink" href="#how-to-cite" title="Permanent link">&para;</a></h1>
 <p>PDSL documentation should be cited using:</p>
 <p>1) the tagged release (recommended), and<br />
-2) the repository citation file (<code>CITATION.cff</code>).</p>
+2) the corresponding Zenodo DOI, and<br />
+3) the repository citation file (<code>CITATION.cff</code>) for standardized metadata.</p>
+<hr />
 <h2 id="recommended-citation-practice">Recommended citation practice<a class="headerlink" href="#recommended-citation-practice" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Cite the <strong>tagged release</strong> (e.g., <code>v0.1.1-review-ready</code>) for stable reference.</li>
-<li>If you must cite the live site, include the access date.</li>
+<li>Cite the <strong>tagged release</strong> (e.g., <code>v0.1.2-review-ready</code>) for stable reference.</li>
+<li>Use the <strong>Zenodo DOI (citable archive)</strong> for version-anchored citation:</li>
 </ul>
+<p><strong>DOI (Zenodo, citable documentation release):</strong><br />
+  https://doi.org/10.5281/zenodo.18732275</p>
+<ul>
+<li>Avoid citing untagged commits or the <code>main</code> branch.</li>
+<li>If referencing the live documentation site, include an access date.</li>
+</ul>
+<hr />
+<h2 id="example-citation-documentation-release">Example citation (documentation release)<a class="headerlink" href="#example-citation-documentation-release" title="Permanent link">&para;</a></h2>
+<p>Damas, F. (2026). <em>Public Diplomacy Simulation Lab (PDSL): Public Documentation Release v0.1.2-review-ready</em>. Zenodo. https://doi.org/10.5281/zenodo.18732275</p>
+<hr />
 <h2 id="what-not-to-cite-pdsl-as">What not to cite PDSL as<a class="headerlink" href="#what-not-to-cite-pdsl-as" title="Permanent link">&para;</a></h2>
-<p>PDSL is not a forecasting system and does not perform causal inference. Avoid framing PDSL as:
-- predictive modeling,
-- automated decision-making,
-- treatment-effect estimation.</p>
-<h2 id="repository-citation-file">Repository citation file<a class="headerlink" href="#repository-citation-file" title="Permanent link">&para;</a></h2>
-<p>Use the repository’s <code>CITATION.cff</code> for standardized metadata.</p>
+<p>PDSL is not a forecasting system and does not perform causal inference. Avoid framing PDSL as:</p>
+<ul>
+<li>predictive modeling,</li>
+<li>automated decision-making,</li>
+<li>treatment-effect estimation,</li>
+<li>empirical measurement of real-world outcomes.</li>
+</ul>
+<p>PDSL provides regime-based interpretive constructs for structured analytical reasoning.</p>
+<hr />
+<h2 id="repository-citation-metadata">Repository citation metadata<a class="headerlink" href="#repository-citation-metadata" title="Permanent link">&para;</a></h2>
+<p>For machine-readable citation data, refer to the repository’s <code>CITATION.cff</code>, which mirrors the tagged release and Zenodo DOI.</p>
 
 
 
