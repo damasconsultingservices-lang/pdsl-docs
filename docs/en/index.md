@@ -1,6 +1,6 @@
 # Public Diplomacy Simulation Lab (PDSL)
 ## Public, review-facing documentation
-![PDSL](../assets/brand/PDSL-LogoLockup_transparent_black_1200w.png){ width="720" }
+![PDSL](assets/brand/PDSL-LogoLockup_transparent_black_1200w.png){ width="720" }
 
 **Release anchor:** v0.1.1-review-ready  
 **Canonical documentation release:** [v0.1.1-review-ready (GitHub Release)](https://github.com/damasconsultingservices-lang/pdsl-docs/releases/tag/v0.1.1-review-ready)  
@@ -30,7 +30,7 @@ PDSL is **not** a forecasting system and does **not** perform causal inference. 
 - Predict public opinion or real-world outcomes  
 - Make causal claims or treatment-effect estimates  
 - Automate decisions or recommendations  
-- Enable targeting, personalization, or operational influence campaigns  
+- Enable targeting, personalization, or operational influence campaigns
 
 ---
 
