@@ -1,6 +1,5 @@
 # Public Diplomacy Simulation Lab (PDSL)
 ## Public, review-facing documentation
-
 ![PDSL](assets/brand/PDSL-LogoLockup_transparent_black_1200w.png){ width="720" }
 
 **Release anchor:** v0.1.1-review-ready  
