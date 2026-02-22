@@ -1,5 +1,8 @@
 cff-version: 1.2.0
 title: "Public Diplomacy Simulation Lab (PDSL) — Public Documentation"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18732275
 message: "If you use this documentation, please cite it."
 type: software
 authors:
