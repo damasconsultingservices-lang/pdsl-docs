@@ -1,49 +1,151 @@
 # Public Diplomacy Simulation Lab (PDSL) — Public Docs
-**Release:** v0.1.1-review-ready  
-**Repository type:** Public, review-facing documentation (no engine)
+
+Review-facing documentation for the **Public Diplomacy Simulation Lab (PDSL)**.
+
+**Owner / Author:** Frantz Damas  
+**Documentation site:** https://damasconsultingservices-lang.github.io/pdsl-docs/  
+**Release anchor:** `v0.1.1-review-ready`  
+**Repository type:** Public documentation (no engine, no source code)
+
+---
 
 ## Executive Summary
-The **Public Diplomacy Simulation Lab (PDSL)** is a **deterministic, theory-constrained simulation framework** built to support **controlled scenario reasoning** in public diplomacy and digitally mediated influence contexts. This public repository contains **review-facing documentation** that enables academic, institutional, and policy stakeholders to understand PDSL’s **scope, assumptions, interpretive logic, and governance discipline**—without exposing the simulation engine, source code, or proprietary mechanics.
 
-PDSL **does not** produce empirical causal estimates, predictions, or forecasts. Instead, it translates structured analytical inputs (e.g., exposure, threat framing with saturation, identity salience, AI literacy, time) into three governed outcome channels interpreted through a regime-based analytical framework:
+The **Public Diplomacy Simulation Lab (PDSL)** is a **deterministic, theory-constrained simulation framework** designed to support **controlled scenario reasoning** and **regime-based interpretation** in algorithmically governed public diplomacy environments.
+
+This repository contains **review-facing documentation only**. It enables academic, institutional, and policy stakeholders to evaluate PDSL’s:
+
+- scope
+- assumptions
+- interpretive logic
+- governance discipline
+- acceptable-use boundaries
+
+The simulation engine, source code, parameter logic, and proprietary mechanics are intentionally excluded.
+
+---
+
+## Core Analytical Channels
+
+PDSL translates structured analytical inputs (e.g., exposure, threat framing with saturation, identity salience, AI literacy, time) into three governed outcome channels:
 
 - **APR — Algorithmic Persuasion Risk**
 - **IAS — Identity Alignment Shift**
 - **PST — Policy Support via Threat Framing**
 
-Outputs are **interpretive constructs** for comparative reasoning, not measurements of real-world effects.
-
-## What This Repo Contains
-- **Model Card** (scope, intended use, assumptions, limitations, ethics)
-- **Review Protocol** (how to evaluate the documentation and interpret outputs)
-- **Policy-Facing Methods Overview** (high-level design logic for non-technical readers)
-- **Figure & Output Interpretation Notes** (how to read results responsibly)
-- **Governance & Citation Materials** (versioning, authorship, acceptable use)
-
-📄 Documentation index: `docs/index.md`
-
-## What This Repo Does *Not* Contain
-To preserve research integrity and prevent misuse, this repository does **not** include:
-- Simulation engine or source code
-- Parameter logic, equations, regime thresholds, or tuning details
-- Internal validation scripts, diagnostics, or deployment instructions
-- API endpoints, operational gates, or infrastructure configuration
-
-Those components are maintained separately in a restricted repository.
-
-## How to Review (Conceptual)
-Reviewers should:
-1. Start with `docs/model-card.md` for scope, assumptions, and limits.
-2. Use `docs/review-protocol.md` to follow the review discipline.
-3. Interpret APR/IAS/PST through `docs/figures/regime-interpretation.md`.
-4. Cite the release using `CITATION.cff` (avoid citing untagged commits).
-
-## Licensing
-- Academic/review use: see `LICENSE`
-- Commercial use: requires a separate agreement — see `COMMERCIAL_LICENSE.md`
-
-## Ownership & Attribution
-PDSL is authored and governed by **Frantz Damas**. All public documentation releases are versioned and review-anchored.
+These outputs are **interpretive constructs** for comparative reasoning.  
+They are not measurements of real-world effects.
 
 ---
-**Release anchor:** `v0.1.1-review-ready`
+
+## What PDSL Is
+
+- A deterministic simulation framework  
+- Theory-constrained and governance-bound  
+- Built for structured comparative reasoning  
+- Designed for interpretive discipline, not operational deployment  
+
+---
+
+## What PDSL Is Not
+
+PDSL is **not**:
+
+- a forecasting system  
+- a causal inference engine  
+- an automated decision or recommendation tool  
+- a behavioral targeting instrument  
+- an operational influence platform  
+
+It does **not** produce empirical causal estimates, predictions, or forecasts.
+
+---
+
+## Appropriate Uses
+
+- Compare policy levers under controlled conditions  
+- Stress-test narrative scenarios without real-world deployment  
+- Train analysts and diplomats in structured reasoning environments  
+- Evaluate interpretive regimes to reduce misuse and over-claiming  
+
+---
+
+## Inappropriate Uses
+
+- Predicting public opinion or geopolitical outcomes  
+- Estimating treatment effects or causal impacts  
+- Automating decisions or policy recommendations  
+- Enabling targeting, personalization, or influence campaigns  
+
+---
+
+## What This Repository Contains
+
+- **Model Card** — scope, assumptions, limitations, ethics  
+- **Methods Note** — interpretive logic and design constraints  
+- **Review Protocol** — evaluation discipline  
+- **Governance & Limitations** — structural guardrails  
+- **Policy Documentation** — high-level analytical framing  
+- **Citation Materials** — versioning and release discipline  
+
+Documentation index: `docs/en/index.md`
+
+---
+
+## What This Repository Does Not Contain
+
+To preserve research integrity and prevent misuse, this repository does **not** include:
+
+- Simulation engine or source code  
+- Parameter logic, equations, regime thresholds, or tuning details  
+- Internal validation scripts or diagnostics  
+- API endpoints or infrastructure configuration  
+- Deployment instructions  
+
+These components are maintained separately in a restricted environment.
+
+---
+
+## How to Review
+
+1. Begin with the **Model Card** (scope and non-claims).  
+2. Read the **Methods Note** (interpretive structure).  
+3. Follow the **Review Protocol** (evaluation discipline).  
+4. Reference the **Brand Coherence Layer** for positioning consistency.  
+5. Cite using the tagged release — not untagged commits.
+
+---
+
+## Citation
+
+Use `CITATION.cff` and reference the tagged release:
+
+`v0.1.1-review-ready`
+
+Avoid citing untagged commits or draft states.
+
+---
+
+## Governance Signals
+
+This repository maintains structured governance documentation:
+
+- `CONTRIBUTING.md`
+- `SECURITY.md`
+- `CODE_OF_CONDUCT.md`
+- `CHANGELOG.md`
+- `RELEASE.md`
+
+---
+
+## Licensing
+
+- Academic / review use: see `LICENSE`
+- Commercial use: requires separate agreement (see `COMMERCIAL_LICENSE.md` if applicable)
+
+---
+
+## Ownership & Attribution
+
+PDSL is authored and governed by **Frantz Damas**.  
+All public documentation releases are versioned and review-anchored.
