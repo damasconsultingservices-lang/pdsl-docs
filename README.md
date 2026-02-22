@@ -1,6 +1,7 @@
 # Public Diplomacy Simulation Lab (PDSL) — Public Docs
 
 Review-facing documentation for the **Public Diplomacy Simulation Lab (PDSL)**.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18732275.svg)](https://doi.org/10.5281/zenodo.18732275)
 
 **Owner / Author:** Frantz Damas  
 **Documentation site:** https://damasconsultingservices-lang.github.io/pdsl-docs/  
