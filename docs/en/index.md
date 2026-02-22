@@ -17,7 +17,8 @@ PDSL is **not** a forecasting system and does **not** perform causal inference. 
 
 1) **Scope and non-claims:** read the Model Card  
 2) **Interpretive logic:** read the Methods Note  
-3) **Review discipline:** read the Review Protocol  
+3) **Review discipline:** read the Review Protocol
+4) **Brand + public positioning:** read Brand Coherence Layer
 
 ---
 
