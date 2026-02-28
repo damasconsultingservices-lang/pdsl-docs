@@ -523,9 +523,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract-130-words" class="md-nav__link">
+  <a href="#abstract" class="md-nav__link">
     <span class="md-ellipsis">
-      Abstract (≈130 words)
+      Abstract
     </span>
   </a>
   
@@ -541,13 +541,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-core-outcome-channels" class="md-nav__link">
+  <a href="#2-version-discipline" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Core Outcome Channels
+      2. Version Discipline
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Core Outcome Channels">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-core-outcome-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Core Outcome Channels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Core Outcome Channels">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -583,27 +592,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-regime-based-interpretation" class="md-nav__link">
+  <a href="#4-regime-based-interpretation" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Regime-Based Interpretation
+      4. Regime-Based Interpretation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-governance-and-reviewability" class="md-nav__link">
+  <a href="#5-governance-and-reviewability" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Governance and Reviewability
+      5. Governance and Reviewability
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-limits-and-non-claims" class="md-nav__link">
+  <a href="#6-limits-and-non-claims" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Limits and Non-Claims
+      6. Limits and Non-Claims
     </span>
   </a>
   
@@ -902,9 +911,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract-130-words" class="md-nav__link">
+  <a href="#abstract" class="md-nav__link">
     <span class="md-ellipsis">
-      Abstract (≈130 words)
+      Abstract
     </span>
   </a>
   
@@ -920,13 +929,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-core-outcome-channels" class="md-nav__link">
+  <a href="#2-version-discipline" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Core Outcome Channels
+      2. Version Discipline
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Core Outcome Channels">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-core-outcome-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Core Outcome Channels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Core Outcome Channels">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -962,27 +980,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-regime-based-interpretation" class="md-nav__link">
+  <a href="#4-regime-based-interpretation" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Regime-Based Interpretation
+      4. Regime-Based Interpretation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-governance-and-reviewability" class="md-nav__link">
+  <a href="#5-governance-and-reviewability" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Governance and Reviewability
+      5. Governance and Reviewability
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-limits-and-non-claims" class="md-nav__link">
+  <a href="#6-limits-and-non-claims" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Limits and Non-Claims
+      6. Limits and Non-Claims
     </span>
   </a>
   
@@ -1021,17 +1039,44 @@
 
 
 <h1 id="public-diplomacy-simulation-lab-pdsl-methods-note">Public Diplomacy Simulation Lab (PDSL): Methods Note<a class="headerlink" href="#public-diplomacy-simulation-lab-pdsl-methods-note" title="Permanent link">&para;</a></h1>
-<p><strong>Version:</strong> v0.1.1-review-ready<br />
+<p><strong>Version:</strong> v1.1 (semantics, frozen) · v0.2.0 (architecture)<br />
 <strong>Author:</strong> Frantz Damas<br />
-<strong>Date:</strong> January 30, 2026  </p>
+<strong>Date:</strong> February 28, 2026  </p>
 <hr />
-<h2 id="abstract-130-words">Abstract (≈130 words)<a class="headerlink" href="#abstract-130-words" title="Permanent link">&para;</a></h2>
-<p>The Public Diplomacy Simulation Lab (PDSL) is a deterministic, theory-constrained simulation framework designed for analytical demonstration and controlled scenario reasoning in public diplomacy contexts. PDSL does not perform empirical causal inference, forecasting, or predictive modeling. Instead, it operationalizes established theoretical constructs—algorithmic persuasion, identity alignment, and policy support under threat framing—within a governed analytical environment that emphasizes interpretive discipline and transparency of assumptions. Outputs are interpreted through a regime-based analytical framework rather than as standalone scores, ensuring that results remain analytically bounded and pedagogically legible. This methods note documents the conceptual structure, assumptions, interpretive logic, and limitations of PDSL v0.1.1-review-ready, providing a citable methodological reference that is independent of implementation details or operational mechanisms.</p>
+<h2 id="abstract">Abstract<a class="headerlink" href="#abstract" title="Permanent link">&para;</a></h2>
+<p>The Public Diplomacy Simulation Lab (PDSL) is a deterministic, theory-constrained simulation framework designed for analytical demonstration and controlled scenario reasoning in public diplomacy contexts. PDSL does not perform empirical causal inference, forecasting, or predictive modeling. Instead, it operationalizes established theoretical constructs — algorithmic persuasion, identity alignment, and policy support under threat framing — within a governed analytical environment that emphasizes interpretive discipline and transparency of assumptions. Outputs are interpreted through a regime-based analytical framework rather than as standalone scores, ensuring that results remain analytically bounded and pedagogically legible.</p>
+<p>This methods note documents the conceptual structure, assumptions, interpretive logic, and limitations of PDSL, providing a citable methodological reference that is independent of implementation details or operational mechanics. Model semantics are frozen at v1.1 and are stable for citation. Engine architecture was modularized in v0.2.0; this change is non-semantic and does not affect outputs, regimes, or interpretive logic.</p>
 <hr />
 <h2 id="1-design-philosophy">1. Design Philosophy<a class="headerlink" href="#1-design-philosophy" title="Permanent link">&para;</a></h2>
-<p>PDSL is intentionally deterministic. Under identical analytical inputs, the framework produces identical outputs. This design choice prioritizes interpretability, reproducibility, and methodological clarity over stochastic realism or predictive power. PDSL is designed to support theoretical reasoning, sensitivity exploration, and structured interpretation—not empirical estimation, optimization, or policy automation.</p>
+<p>PDSL is intentionally deterministic. Under identical analytical inputs, the framework produces identical outputs. This design choice prioritizes interpretability, reproducibility, and methodological clarity over stochastic realism or predictive power. PDSL is designed to support theoretical reasoning, sensitivity exploration, and structured interpretation — not empirical estimation, optimization, or policy automation.</p>
+<p>Reproducibility is enforced by a hard gate (<code>/api/validate</code>) that verifies semantic integrity against a publicly committed canonical test vector on every deployment. This governance mechanism ensures that no architectural or infrastructural change can silently alter model behavior.</p>
 <hr />
-<h2 id="2-core-outcome-channels">2. Core Outcome Channels<a class="headerlink" href="#2-core-outcome-channels" title="Permanent link">&para;</a></h2>
+<h2 id="2-version-discipline">2. Version Discipline<a class="headerlink" href="#2-version-discipline" title="Permanent link">&para;</a></h2>
+<p>PDSL separates two independent version tracks to prevent citation ambiguity:</p>
+<table>
+<thead>
+<tr>
+<th>Track</th>
+<th>Version</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Model semantics</strong></td>
+<td>v1.1 (frozen)</td>
+<td>All formulas, regime taxonomy, fatigue rule, saturation logic, and output behavior</td>
+</tr>
+<tr>
+<td><strong>Engine architecture</strong></td>
+<td>v0.2.0</td>
+<td>Internal modular layout — non-semantic, no effect on outputs</td>
+</tr>
+</tbody>
+</table>
+<p>Academic citations and policy references should anchor to <strong>v1.1 semantics</strong>. Architecture versioning is internal and not relevant to methodological reproducibility.</p>
+<hr />
+<h2 id="3-core-outcome-channels">3. Core Outcome Channels<a class="headerlink" href="#3-core-outcome-channels" title="Permanent link">&para;</a></h2>
 <p>PDSL produces three analytically distinct outcome channels:</p>
 <h3 id="algorithmic-persuasion-risk-apr">Algorithmic Persuasion Risk (APR)<a class="headerlink" href="#algorithmic-persuasion-risk-apr" title="Permanent link">&para;</a></h3>
 <p>APR represents short-run susceptibility to attitudinal change under modeled conditions of exposure and framing pressure. It functions as a diagnostic signal rather than a proxy for policy support or approval.</p>
@@ -1040,31 +1085,37 @@
 <h3 id="policy-support-via-threat-framing-pst">Policy Support via Threat Framing (PST)<a class="headerlink" href="#policy-support-via-threat-framing-pst" title="Permanent link">&para;</a></h3>
 <p>PST represents policy support generated through threat framing under modeled conditions of exposure, identity salience, and time, subject to explicit diminishing returns under saturation. PST is interpreted only within the regime-based analytical framework described below.</p>
 <hr />
-<h2 id="3-regime-based-interpretation">3. Regime-Based Interpretation<a class="headerlink" href="#3-regime-based-interpretation" title="Permanent link">&para;</a></h2>
+<h2 id="4-regime-based-interpretation">4. Regime-Based Interpretation<a class="headerlink" href="#4-regime-based-interpretation" title="Permanent link">&para;</a></h2>
 <p>PDSL does not interpret outcome values in isolation. Instead, outputs are read through a regime-based analytical framework that classifies system states into analytically meaningful regimes. These regimes govern interpretation by constraining:</p>
 <ul>
 <li>which mechanisms are analytically dominant,</li>
 <li>which narrative interpretations are permissible, and</li>
 <li>which policy-relevant cautions apply.</li>
 </ul>
-<p>This regime-based approach prevents misinterpretation of outputs as linear effects, predictions, or direct policy recommendations.</p>
+<p>This regime-based approach prevents misinterpretation of outputs as linear effects, predictions, or direct policy recommendations. Six regimes (R0–R5) are defined and stable under v1.1 semantics.</p>
 <hr />
-<h2 id="4-governance-and-reviewability">4. Governance and Reviewability<a class="headerlink" href="#4-governance-and-reviewability" title="Permanent link">&para;</a></h2>
-<p>PDSL adopts a governance-first posture designed to ensure internal coherence and interpretive consistency across analytical uses. Outputs associated with PDSL v0.1.1-review-ready should therefore be understood as deterministic, auditable “what-if” signals generated under explicitly stated assumptions. This governance orientation is intended to preserve methodological discipline and reduce misuse, particularly the tendency to over-read analytical outputs as empirical forecasts or causal claims.</p>
+<h2 id="5-governance-and-reviewability">5. Governance and Reviewability<a class="headerlink" href="#5-governance-and-reviewability" title="Permanent link">&para;</a></h2>
+<p>PDSL adopts a governance-first posture designed to ensure internal coherence and interpretive consistency across analytical uses. Three mechanisms enforce this posture:</p>
+<ol>
+<li><strong>Determinism</strong> — identical inputs always produce identical outputs.</li>
+<li><strong>Hard gate</strong> — <code>/api/validate</code> verifies semantic integrity against the canonical test vector on every deployment.</li>
+<li><strong>Public test vectors</strong> — canonical inputs and expected outputs are committed at <code>docs/test-vectors/</code> and independently verifiable.</li>
+</ol>
+<p>Outputs associated with PDSL v1.1 should be understood as deterministic, auditable "what-if" signals generated under explicitly stated assumptions.</p>
 <hr />
-<h2 id="5-limits-and-non-claims">5. Limits and Non-Claims<a class="headerlink" href="#5-limits-and-non-claims" title="Permanent link">&para;</a></h2>
+<h2 id="6-limits-and-non-claims">6. Limits and Non-Claims<a class="headerlink" href="#6-limits-and-non-claims" title="Permanent link">&para;</a></h2>
 <p>PDSL explicitly does not:</p>
 <ul>
-<li>perform causal inference or estimate treatment effects,  </li>
-<li>forecast real-world behavior or policy outcomes,  </li>
-<li>optimize decisions or recommend actions,  </li>
-<li>model individual-level targeting or personalization, or  </li>
+<li>perform causal inference or estimate treatment effects,</li>
+<li>forecast real-world behavior or policy outcomes,</li>
+<li>optimize decisions or recommend actions,</li>
+<li>model individual-level targeting or personalization, or</li>
 <li>operate as a decision-support or operational system.</li>
 </ul>
 <p>All outputs are illustrative and analytical. Their validity is bounded by the theoretical assumptions encoded in the framework and by the regime-based interpretation that governs their use.</p>
 <hr />
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
-<p>Damas, F. (2026). <em>Public Diplomacy Simulation Lab (PDSL): Methods Note</em> (v0.1.1-review-ready). Deterministic simulation framework for analytical demonstration in public diplomacy. Public documentation release.</p>
+<p>Damas, F. (2026). <em>Public Diplomacy Simulation Lab (PDSL): Methods Note</em> (v1.1 semantics · v0.2.0 architecture). Deterministic simulation framework for analytical demonstration in public diplomacy. Public documentation release.</p>
 
 
 
