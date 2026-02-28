@@ -574,9 +574,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#semantic-integrity-hard-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Integrity &amp; Hard Gate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#versioning" class="md-nav__link">
     <span class="md-ellipsis">
       Versioning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#separation-of-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Separation of Tracks
     </span>
   </a>
   
@@ -842,9 +860,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#semantic-integrity-hard-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Integrity &amp; Hard Gate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#versioning" class="md-nav__link">
     <span class="md-ellipsis">
       Versioning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#separation-of-tracks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Separation of Tracks
     </span>
   </a>
   
@@ -884,13 +920,74 @@
 
 <h1 id="governance-disclosure-boundary">Governance &amp; Disclosure Boundary<a class="headerlink" href="#governance-disclosure-boundary" title="Permanent link">&para;</a></h1>
 <h2 id="disclosure-boundary">Disclosure Boundary<a class="headerlink" href="#disclosure-boundary" title="Permanent link">&para;</a></h2>
-<p>PDSL public documentation is designed to support reviewability and responsible interpretation while preventing misuse. Therefore, this repository intentionally excludes:
-- engine source code and executable logic
-- equations, parameter thresholds, and tuning rules
-- operational validation scripts and deployment details</p>
-<p>Public materials describe <strong>meaning, assumptions, and interpretive discipline</strong>—not implementation mechanics.</p>
+<p>PDSL public documentation is designed to support reviewability and responsible interpretation while preventing misuse. This repository intentionally excludes:</p>
+<ul>
+<li>engine source code and executable logic</li>
+<li>equations, parameter thresholds, and tuning rules</li>
+<li>operational validation scripts and deployment details</li>
+</ul>
+<p>Public materials describe meaning, assumptions, and interpretive discipline — not implementation mechanics.</p>
+<hr />
+<h2 id="semantic-integrity-hard-gate">Semantic Integrity &amp; Hard Gate<a class="headerlink" href="#semantic-integrity-hard-gate" title="Permanent link">&para;</a></h2>
+<p>PDSL v1.1 model semantics are <strong>frozen</strong>. No update to infrastructure, architecture, or deployment may alter output behavior without a formal semantic version increment.</p>
+<p>This commitment is enforced by the <code>/api/validate</code> hard gate, which verifies on every deployment that the production engine matches the publicly committed canonical test vector:</p>
+<ul>
+<li>Canonical inputs: <code>docs/test-vectors/canonical-input-v1.1.json</code></li>
+<li>Expected outputs: <code>docs/test-vectors/canonical-expected-v1.1.json</code></li>
+<li>Expected result: <code>ok: true</code></li>
+</ul>
+<p>If <code>/api/validate</code> returns <code>ok: false</code>, the deployment is considered non-conforming and outputs should not be cited.</p>
+<hr />
 <h2 id="versioning">Versioning<a class="headerlink" href="#versioning" title="Permanent link">&para;</a></h2>
-<p>Public releases are anchored to explicit tags (e.g., <code>v0.1.1-review-ready</code>). Review artifacts should cite the tagged release, not untagged commits.</p>
+<p>PDSL uses two independent version tracks:</p>
+<table>
+<thead>
+<tr>
+<th>Track</th>
+<th>Current Version</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Model semantics</strong></td>
+<td>v1.1 (frozen)</td>
+<td>Stable, citable — all formulas, regimes, fatigue rule, compute() logic</td>
+</tr>
+<tr>
+<td><strong>Engine architecture</strong></td>
+<td>v0.2.0</td>
+<td>Internal modularization only — non-semantic</td>
+</tr>
+</tbody>
+</table>
+<p>Public releases are anchored to explicit tags (e.g., <code>v0.2.0-docs</code>). Review artifacts should cite the tagged release and reference <strong>v1.1 semantics</strong> for methodological anchoring.</p>
+<hr />
+<h2 id="separation-of-tracks">Separation of Tracks<a class="headerlink" href="#separation-of-tracks" title="Permanent link">&para;</a></h2>
+<p>PDSL maintains a deliberate separation between:</p>
+<table>
+<thead>
+<tr>
+<th>Track</th>
+<th>Audience</th>
+<th>Contains</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public docs (<code>pdsl-docs</code>)</td>
+<td>Academic, policy, review</td>
+<td>Conceptual structure, governance, limitations, methods note</td>
+</tr>
+<tr>
+<td>Private engine (<code>pdsl</code>)</td>
+<td>Internal / commercial</td>
+<td>Source code, deployment, validation scripts</td>
+</tr>
+</tbody>
+</table>
+<p>This separation is a governance choice, not a technical constraint. It protects interpretive integrity by ensuring that public reviewers engage with the conceptual framework on its own terms.</p>
+<hr />
 <h2 id="authorship-ownership">Authorship &amp; Ownership<a class="headerlink" href="#authorship-ownership" title="Permanent link">&para;</a></h2>
 <p>PDSL is authored and governed by <strong>Frantz Damas</strong>.</p>
 
