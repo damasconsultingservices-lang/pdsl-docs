@@ -49,8 +49,9 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Brand: brand/index.md
-  - Methods:
+ - Methods:
       - Overview: methods/index.md
+      - Reviewer Start Here: methods/reviewer-start-here.md
       - Model Card: methods/model-card.md
       - Methods Note: methods/methods-note.md
       - Review Protocol: methods/review-protocol.md
